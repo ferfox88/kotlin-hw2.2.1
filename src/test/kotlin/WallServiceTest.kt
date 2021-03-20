@@ -20,7 +20,7 @@ class WallServiceTest {
             Post(
                 1, 11, 13, 0, 11, "привет!",
                 0, 1, true, comments, copyright, likes, null, views,
-                PostType.post, null,null,0, null, true, true, true, true, true,
+                PostType.post, null, arrayOf<Attachments>(AudioAttachment(), NoteAttachment()), null,0, null, true, true, true, true, true,
                 false, donat, 0
             )
         )
@@ -28,7 +28,7 @@ class WallServiceTest {
             Post(
                 2, 11, 13, 0, 11, "привет!",
                 0, 1, true, comments, copyright, likes, null, views,
-                PostType.post, null,null,0, null, true, true, true, true, true,
+                PostType.post, null,arrayOf<Attachments>(AudioAttachment()),null,0, null, true, true, true, true, true,
                 false, donat, 0
             )
         )
@@ -36,7 +36,7 @@ class WallServiceTest {
             Post(
                 3, 11, 13, 0, 11, "привет!",
                 0, 1, true, comments, copyright, likes, null, views,
-                PostType.post, null,null,0, null, true, true, true, true, true,
+                PostType.post, null,arrayOf<Attachments>(AudioAttachment()),null,0, null, true, true, true, true, true,
                 false, donat, 0
             )
         )
@@ -44,7 +44,7 @@ class WallServiceTest {
         val update = Post(
             2, 11, 13, 0, 11, "привет!",
             0, 1, true, comments, copyright, likes, null, views,
-            PostType.post, null,null,0, null, true, true, true, true, true,
+            PostType.post, null,arrayOf<Attachments>(AudioAttachment()),null,0, null, true, true, true, true, true,
             false, donat, 0
         )
 
@@ -70,7 +70,7 @@ class WallServiceTest {
             Post(
                 1, 11, 13, 0, 11, "привет!",
                 0, 1, true, comments, copyright, likes, null, views,
-                PostType.post, null,null,0, null, true, true, true, true, true,
+                PostType.post, null,arrayOf<Attachments>(AudioAttachment()),null,0, null, true, true, true, true, true,
                 false, donat, 0
             )
         )
@@ -78,7 +78,7 @@ class WallServiceTest {
             Post(
                 2, 11, 13, 0, 11, "привет!",
                 0, 1, true, comments, copyright, likes, null, views,
-                PostType.post, null,null,0, null, true, true, true, true, true,
+                PostType.post, null,arrayOf<Attachments>(AudioAttachment()),null,0, null, true, true, true, true, true,
                 false, donat, 0
             )
         )
@@ -86,7 +86,7 @@ class WallServiceTest {
             Post(
                 3, 11, 13, 0, 11, "привет!",
                 0, 1, true, comments, copyright, likes, null, views,
-                PostType.post, null,null,0, null, true, true, true, true, true,
+                PostType.post, null,arrayOf<Attachments>(AudioAttachment()),null,0, null, true, true, true, true, true,
                 false, donat, 0
             )
         )
@@ -94,7 +94,7 @@ class WallServiceTest {
         val update = Post(
             5, 11, 13, 0, 11, "привет!",
             0, 1, true, comments, copyright, likes, null, views,
-            PostType.post, null,null,0, null, true, true, true, true, true,
+            PostType.post, null,arrayOf<Attachments>(AudioAttachment()),null,0, null, true, true, true, true, true,
             false, donat, 0
         )
 
@@ -118,7 +118,7 @@ class WallServiceTest {
         val post = Post(
             0, 11, 13, 0, 11, "привет!",
             0, 1, true, comments, copyright, likes, null, views,
-            PostType.post, null,null,0, null, true, true, true, true, true,
+            PostType.post, null,arrayOf<Attachments>(AudioAttachment()),null,0, null, true, true, true, true, true,
             false, donat, 0
         )
         service.add(post)
