@@ -1,5 +1,7 @@
 package ru.netology
 
+import Post
+
 class WallService {
     private var posts = emptyArray<Post>()
 
@@ -27,7 +29,10 @@ class WallService {
                     reposts = post.reposts,
                     views = post.views,
                     postType = post.postType,
+                    postSource = post.postSource,
                     signerId = post.signerId,
+                    geo = post.geo,
+                    copyHistory = post.copyHistory,
                     canPin = post.canPin,
                     canDelete = post.canDelete,
                     canEdit = post.canEdit,
