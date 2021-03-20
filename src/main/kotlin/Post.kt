@@ -1,4 +1,5 @@
-package ru.netology
+import ru.netology.*
+import kotlin.Array
 
 data class Post(
     var id: Int = 0,
@@ -12,11 +13,14 @@ data class Post(
     val friendsOnly: Boolean,
     val comments: Comments,
     val copyright: Copyright,
-    val likes: Likes,
-    val reposts: Reposts,
+    val likes: Likes,    //
+    val reposts: Reposts?,
     val views: Views,
     val postType: PostType,
+    val postSource: PostSource?, //
+    val geo: Geo?, //
     val signerId: Int,
+    val copyHistory: ArrayList<Reposts>?, //
     val canPin: Boolean,
     val canDelete: Boolean,
     val canEdit: Boolean,
