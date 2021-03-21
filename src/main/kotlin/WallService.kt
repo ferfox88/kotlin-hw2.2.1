@@ -1,9 +1,12 @@
 package ru.netology
 
+import Comment
 import Post
+import PostNotFoundException
 
 class WallService {
     private var posts = emptyArray<Post>()
+    private var comments = emptyArray<Comment>()
 
     fun add(post: Post): Post {
         val idPost = if (posts.isNotEmpty()) posts.last().id + 1 else 1
@@ -46,6 +49,16 @@ class WallService {
             }
         }
         return false
+    }
+
+    fun createComment(comment: Comment): Boolean {
+        for (post in posts) {
+            if (post.id == comment.id) {
+                comments += comment
+                return true
+            }
+        }
+        throw PostNotFoundException("post not found")
     }
 }
 
